@@ -328,6 +328,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #ed7102;
+    margin-left: 1rem;
 }
 
 .list__link--orange:link p,
@@ -348,6 +349,14 @@ body {
     z-index: 10;
     width: 70%;
 }
+.btn-outline {
+    transition: all 0.2s;
+}
+
+.btn-outline:hover {
+    background-color: #fff;
+    color: #004b78;
+}
 
 .header__hero-text-container {
     margin-top: 25rem;
@@ -361,6 +370,11 @@ body {
     font-weight: bold;
     color: #005f96;
     font-family: 'futura-bold';
+}
+
+#btn-size:link,
+#btn-size:visited {
+    padding: 1rem 6rem;
 }
 
 .header__hero-text--secondary {
@@ -1284,8 +1298,8 @@ section:focus {
     display: none;
 }
 
-.hidden-items {
-    display: none;
+.portal__points li {
+    line-height: 1.33;
 }
 
 /* Media Queries */
@@ -1329,7 +1343,11 @@ section:focus {
         padding: 6rem 26rem 5rem 26rem !important;
     }
     .services__content-container {
-        margin-left: 6rem;
+        margin: 6rem 2rem 6rem 2rem;
+    }
+
+    #btn-size {
+        margin-left: 1.5rem;
     }
     .footer__logo-img {
         height: 25rem;
@@ -1447,6 +1465,7 @@ section:focus {
     }
     .stefan-gutwirth img {
         order: 2;
+        margin-left: 3rem;
     }
     .stefan-gutwirth {
         width: 100%;
@@ -1456,6 +1475,7 @@ section:focus {
         width: 50%;
         align-self: end;
         text-align: end;
+        margin-right: -8rem;
     }
 
     .founders__contact-info {
@@ -1495,7 +1515,7 @@ section:focus {
         text-align: left;
     }
     .portal__description {
-        padding: 7rem 7rem 7rem 7rem;
+        padding: 7rem 2rem 7rem 2rem;
     }
     .portal__img {
         display: none;
@@ -1513,7 +1533,7 @@ section:focus {
 
     .portal__benefits {
         width: 100%;
-        padding: 7rem 7rem 7rem 7rem;
+        padding: 7rem 2rem 7rem 2rem;
     }
 
     .portal {
@@ -1862,6 +1882,9 @@ section:focus {
         height: 24px;
         width: 24px;
     }
+    .hidden-items {
+        display: none;
+    }
 
     .mail-icon {
         height: 35px;
@@ -2011,9 +2034,15 @@ section:focus {
         padding: 2rem 5rem;
     }
 
+    #btn-size:link,
+    #btn-size:visited {
+        padding: 2rem 11rem;
+    }
+
     .btn-outline {
-        width: 90%;
+        width: 80%;
         text-align: center;
+        font-size: 3rem;
     }
 
     .contact__description {
@@ -2100,6 +2129,10 @@ section:focus {
     }
     .checkbox-container:not(:last-child) {
         margin-top: 2rem;
+    }
+
+    .header__hero-text-container {
+        margin: 4rem;
     }
 
     .carousel__content--primary {
