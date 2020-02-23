@@ -199,12 +199,54 @@ var logoContent = [
     'Professionelle Prozesse ermöglichen Fahrzeugzulassungen, auch wenn Ihre Mitarbeiter ausfallen.'
 ];
 
+var founderImg = ['assets/stefan-gutwirth-stockimage.png', 'assets/grimminger-freigestellt-2.png'];
+var founderName = ['Stefan Grutwirth', 'Andreas Grimminger'];
+var founderPost = ['Gebietsleiter Süd', 'Key Account Manger'];
+
 var imge = 2;
 var size;
 
-setInterval(() => {
-    size = widthScreen;
-}, 100);
+if (widthScreen < 800) {
+    setInterval(() => {
+        if (widthScreen < 800) {
+            if (
+                document.getElementById('dot-zero-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.remove('dot-active');
+                document.getElementById('dot-one-founder').classList.add('dot-active-white');
+                document.getElementById('dot-one-founder').classList.add('dot-active');
+
+                document.querySelector('.stefan-gutwirth img').src = founderImg[1];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[1];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[1];
+            } else if (
+                document.getElementById('dot-one-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-one-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-one-founder').classList.remove('dot-active');
+                document.getElementById('dot-zero-founder').classList.add('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.add('dot-active');
+
+                document.querySelector('.stefan-gutwirth img').src = founderImg[0];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[0];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[0];
+            }
+        }
+
+        // <div class="stefan-gutwirth">
+        //         <img src="assets/stefan-gutwirth-stockimage.png" alt="">
+        //         <div class="info">
+        //             <p class="info-name">Stefan Grutwirth</p>
+        //             <p class="info-post">Gebietsleiter Süd</p>
+        //         </div>
+        //     </div>
+    }, 2000);
+}
 
 if (widthScreen < 800) {
     setInterval(() => {

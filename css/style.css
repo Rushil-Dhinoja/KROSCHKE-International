@@ -1159,6 +1159,10 @@ section:focus {
 .portal__points-item div {
     margin-right: 1rem;
 }
+#myCarousel {
+    height: 50vh;
+    min-height: 50vh;
+}
 
 .checkbox-container .checkbxoes-container-1 div {
     display: flex;
@@ -1245,6 +1249,10 @@ section:focus {
     font-family: 'futura-medium';
     font-size: 2.4rem;
     color: #005f96;
+}
+
+.dots-founders {
+    display: none;
 }
 
 .founder-email a:link,
@@ -1413,9 +1421,19 @@ section:focus {
     .andreas-grimminger img {
         padding-left: 1rem;
     }
+    #myCarousel {
+        height: 45vh;
+        min-height: 45vh;
+    }
 }
 
 @media only screen and (max-width: 800px) {
+    .dots-founders {
+        margin-top: 0;
+        padding-bottom: 10rem;
+        display: flex;
+    }
+
     .andreas-grimminger {
         display: none;
     }
@@ -1917,6 +1935,11 @@ section:focus {
     .carousel__content--secondary {
         padding: 0 2rem;
     }
+
+    #myCarousel {
+        height: 40vh;
+        min-height: 40vh;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -1938,6 +1961,11 @@ section:focus {
     html {
         font-size: 37.5%;
     }
+
+    #portal-heading {
+        padding: 0 0 0 0 !important;
+    }
+
     .about__description {
         padding: 0 3rem;
     }
@@ -1950,7 +1978,13 @@ section:focus {
 
     .heading-2 {
         font-size: 2.5rem;
-        padding: 4rem 25rem 6rem 25rem !important;
+        padding: 5rem 0 5rem 2rem !important;
+        text-align: left;
+    }
+    .founder-info {
+        margin: 0 auto 10rem auto;
+        width: 90%;
+        box-sizing: border-box;
     }
 
     .header__background {
@@ -2025,6 +2059,12 @@ section:focus {
     #checkbox-content {
         width: 90%;
     }
+    .header__hero-text-container {
+        margin: 5rem 5rem;
+    }
+    #__heading {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -2044,10 +2084,12 @@ section:focus {
         padding: 0 0rem;
     }
     .heading-2 {
-        padding: 4rem 15rem 6rem 15rem !important;
+        padding: 4rem auto 6rem auto !important;
     }
+
     .benefits .benefits-heading-main {
         padding: 4rem 8rem 6rem 8rem !important;
+        text-align: center;
     }
 }
 
@@ -2063,9 +2105,4 @@ section:focus {
     .container-sm {
         max-width: 100%;
     }
-}
-
-#myCarousel {
-    height: 50vh;
-    min-height: 50vh;
 }
