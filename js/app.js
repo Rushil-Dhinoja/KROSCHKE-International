@@ -47,6 +47,12 @@ $(document).ready(() => {
         list.slideToggle(200);
     });
 
+    $('.reval').click(() => {
+        var list = $('.hidden-items');
+        list.slideToggle(200);
+        list.css('display', 'flex');
+    });
+
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
@@ -86,48 +92,7 @@ $(document).ready(() => {
                 }
             }
         });
-
-    // $('.btn-1').click(() => {
-    //     if ($(window).width() < 800) {
-    //         var form1 = $('#form--1');
-    //         var form2 = $('#form--2');
-
-    //         $('.btn-1').toggleClass('btn-active');
-    //         $('.btn-2').removeClass('btn-active');
-    //         $('.btn-3').removeClass('btn-active');
-    //         form1.toggleClass('form-show');
-    //         form1.toggleClass('form--1');
-    //         form2.removeClass('form-show');
-    //     }
-    // });
-
-    // $('.btn-2').click(() => {
-    //     if ($(window).width() < 800) {
-    //         var form1 = $('#form--1');
-    //         var form2 = $('#form--2');
-
-    //         $('.btn-1').removeClass('btn-active');
-    //         $('.btn-2').toggleClass('btn-active');
-    //         $('.btn-3').removeClass('btn-active');
-
-    //         form2.toggleClass('form-show');
-    //         form2.toggleClass('form--2');
-    //         form1.removeClass('form-show');
-    //         form1.removeClass('form--1');
-    //     }
-    // });
 });
-
-// if (window.innerWidth < 800) {
-//     var i = document.querySelector('.btn-1').classList.remove('btn-active');
-// }
-// window.addEventListener('resize', () => {
-//     if (window.innerWidth < 800) {
-//         document.querySelector('.btn-1').classList.remove('btn-active');
-//     } else {
-//         document.querySelector('.btn-1').classList.add('btn-active');
-//     }
-// });
 
 if (widthScreen < 800) {
     var i = document.querySelector('#btn-form-1').classList.remove('btn-center');
@@ -188,6 +153,21 @@ document.querySelector('.show__more').addEventListener('click', () => {
 
     document.querySelector('.show__more svg').classList.toggle('show__more-svg');
     document.querySelector('.show__more svg').classList.toggle('show__less-svg');
+});
+
+var classsa;
+
+document.querySelector('.reval').addEventListener('click', () => {
+    classsa = document.querySelector('.show-more-text-item').textContent;
+    console.log(classsa);
+    if (classsa === 'Mehr lesen') {
+        document.querySelector('.show-more-text-item').textContent = 'Weniger lesen';
+    } else {
+        document.querySelector('.show-more-text-item').textContent = 'Mehr lesen';
+    }
+
+    document.querySelector('.reval svg').classList.toggle('show-more-svg');
+    document.querySelector('.reval svg').classList.toggle('show-less-svg');
 });
 
 var primary = ['ca.', 'rund ', 'Über ', 'rund ', 'ca. ', 'ca. '];

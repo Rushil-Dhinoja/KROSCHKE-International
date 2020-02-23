@@ -1276,6 +1276,10 @@ section:focus {
     display: none;
 }
 
+.hidden-items {
+    display: none;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1200px) {
@@ -1330,11 +1334,30 @@ section:focus {
     .list__item:not(:last-child) {
         margin-right: 3rem;
     }
+    .founder-info {
+        width: 70%;
+    }
+    .info {
+        margin-right: -2rem;
+    }
+}
+
+.reval {
+    display: none;
 }
 
 @media only screen and (max-width: 1000px) {
     html {
         font-size: 50%;
+    }
+    .portal__img {
+        width: 400px;
+    }
+    .portal__description {
+        padding: 7rem 15rem 7rem 8rem;
+    }
+    .portal__benefits {
+        padding: 7rem 12rem 22rem 7rem;
     }
     .header__hero-text-container {
         margin-top: 28rem;
@@ -1380,9 +1403,100 @@ section:focus {
     .benefits__item:nth-of-type(4) {
         margin-top: 3rem;
     }
+    .info {
+        margin-right: -15rem;
+    }
+
+    .stefan-gutwirth {
+        padding-left: 0rem;
+    }
+    .andreas-grimminger img {
+        padding-left: 1rem;
+    }
 }
 
 @media only screen and (max-width: 800px) {
+    .andreas-grimminger {
+        display: none;
+    }
+    .stefan-gutwirth img {
+        order: 2;
+    }
+    .stefan-gutwirth {
+        width: 100%;
+    }
+    .info {
+        margin: 0;
+        width: 50%;
+        align-self: end;
+        text-align: end;
+    }
+
+    .founders__contact-info {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 5rem;
+    }
+
+    .founder-tel {
+        display: none;
+    }
+
+    .founder-email {
+        border: none;
+    }
+
+    .founder-email .tel-div {
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .reval {
+        color: #005f96;
+        fill: #005f96;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .reval svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .portal__description-heading {
+        text-align: left;
+    }
+    .portal__description {
+        padding: 7rem 7rem 7rem 7rem;
+    }
+    .portal__img {
+        display: none;
+    }
+
+    .reval {
+        display: block;
+    }
+    .portal {
+        flex-direction: column;
+    }
+    .portal__description {
+        width: 100%;
+    }
+
+    .portal__benefits {
+        width: 100%;
+        padding: 7rem 7rem 7rem 7rem;
+    }
+
+    .portal {
+        position: static;
+    }
+
+    .about {
+        padding-top: 0;
+    }
     .h1,
     .h2,
     .h3,
