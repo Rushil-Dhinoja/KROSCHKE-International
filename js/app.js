@@ -199,7 +199,10 @@ var logoContent = [
     'Professionelle Prozesse ermöglichen Fahrzeugzulassungen, auch wenn Ihre Mitarbeiter ausfallen.'
 ];
 
-var founderImg = ['assets/stefan-gutwirth-stockimage.png', 'assets/grimminger-freigestellt-2.png'];
+var founderImg = [
+    'assets/stefan-gutwirth-stockimage@3x.png',
+    'assets/grimminger-freigestellt-2@3x.png'
+];
 var founderName = ['Stefan Grutwirth', 'Andreas Grimminger'];
 var founderPost = ['Gebietsleiter Süd', 'Key Account Manger'];
 
