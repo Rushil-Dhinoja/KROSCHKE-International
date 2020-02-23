@@ -524,8 +524,8 @@ h6 {
 
 .services__content-container svg {
     fill: #005f96;
-    height: 1.4rem;
-    width: 1.2rem;
+    height: 1rem;
+    width: 1rem;
     margin-left: -1rem;
 }
 
@@ -534,7 +534,7 @@ h6 {
     font-weight: 500;
     color: #005f96;
     font-family: 'futura-medium';
-    margin-left: 0.4rem;
+    margin-left: 1.5rem;
     margin-bottom: 0;
 }
 
@@ -1116,8 +1116,8 @@ section:focus {
 
 .footer__link-icon {
     fill: #fff;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1rem;
+    width: 1rem;
     margin-right: 1rem;
 }
 .hover-text:hover {
