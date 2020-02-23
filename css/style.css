@@ -1430,8 +1430,16 @@ section:focus {
 @media only screen and (max-width: 800px) {
     .dots-founders {
         margin-top: 0;
-        padding-bottom: 10rem;
+        padding-bottom: 5rem;
         display: flex;
+    }
+
+    .services__content-container {
+        margin-bottom: 6rem;
+    }
+
+    #less-margin {
+        margin-bottom: 3.2rem;
     }
 
     .andreas-grimminger {
@@ -1958,6 +1966,10 @@ section:focus {
 }
 
 @media only screen and (max-width: 500px) {
+    #brands-heading {
+        padding: 4rem 15rem 3rem 15rem !important;
+        text-align: center;
+    }
     html {
         font-size: 37.5%;
     }
@@ -1999,8 +2011,19 @@ section:focus {
         padding: 2rem 5rem;
     }
 
+    .btn-outline {
+        width: 90%;
+        text-align: center;
+    }
+
+    .contact__description {
+        margin: 0 2rem;
+        text-align: left;
+        width: 90%;
+    }
+
     .header__hero-text-container {
-        margin: 3rem 3rem;
+        margin: 8rem 3rem 3rem 3rem;
     }
     .header__hero-text--primary {
         font-size: 3rem;
@@ -2059,15 +2082,17 @@ section:focus {
     #checkbox-content {
         width: 90%;
     }
-    .header__hero-text-container {
-        margin: 5rem 5rem;
-    }
+
     #__heading {
         text-align: center;
     }
 }
 
 @media only screen and (max-width: 400px) {
+    #brands-heading {
+        padding: 4rem 12rem 3rem 12rem !important;
+        text-align: center;
+    }
     .checkboxes-container {
         flex-direction: column;
         justify-content: start;
