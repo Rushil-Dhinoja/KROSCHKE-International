@@ -2119,7 +2119,7 @@ section:focus {
 
 @media only screen and (max-width: 400px) {
     #brands-heading {
-        padding: 4rem 12rem 3rem 12rem !important;
+        padding: 4rem 6rem 3rem 6rem !important;
         text-align: center;
     }
     .checkboxes-container {
