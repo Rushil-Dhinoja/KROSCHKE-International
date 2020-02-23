@@ -692,6 +692,10 @@ section:focus {
     margin-right: 5rem;
 }
 
+.about {
+    padding-top: 15rem;
+}
+
 .about__main {
     display: flex;
 }
@@ -1102,6 +1106,7 @@ section:focus {
     width: 100%;
     display: flex;
     z-index: -1;
+    position: relative;
 }
 
 .portal__description {
@@ -1114,7 +1119,7 @@ section:focus {
     padding-top: 1rem;
     background-color: #a5d2d2;
     width: 50%;
-    padding: 7rem 18rem 7rem 7rem;
+    padding: 7rem 18rem 22rem 7rem;
     box-sizing: border-box;
 }
 .portal__benefits ul {
@@ -1147,6 +1152,7 @@ section:focus {
 }
 
 .portal__points-item:not(:last-child) {
+    line-height: 1.25;
     margin-bottom: 1.6rem;
 }
 
@@ -1158,6 +1164,118 @@ section:focus {
     display: flex;
     width: calc(100% / 2);
 }
+
+.portal__img {
+    position: absolute;
+    left: 35%;
+    top: 65%;
+}
+
+.heading-less-padding {
+    padding-top: 2rem;
+}
+
+.founder-info {
+    width: 60%;
+    background-color: #a5d2d2;
+    margin: 0 auto 10rem auto;
+}
+
+.founder__meet {
+    display: flex;
+    padding-top: 3rem;
+}
+.andreas-grimminger,
+.stefan-gutwirth {
+    width: 50%;
+    display: flex;
+}
+
+.info {
+    margin-top: 2rem;
+    margin-left: -2rem;
+    z-index: 50;
+}
+
+.stefan-gutwirth .info {
+    margin-top: 1rem;
+}
+
+.info-name {
+    font-family: 'futura-medium';
+    font-size: 1.8rem;
+    color: #005f96;
+    margin-bottom: 0;
+    line-height: 1.28;
+}
+
+.info-post {
+    margin-bottom: 0;
+    font-family: 'futura-light';
+    font-size: 1.8rem;
+    color: #005f96;
+    line-height: 1.28;
+}
+
+.stefan-gutwirth {
+    padding-top: 0.8rem;
+    padding-left: 3rem;
+}
+
+.andreas-grimminger img {
+    display: inline-block;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
+.founders__contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.founder-email {
+    border-right: 1px solid #005f96;
+    padding-right: 1rem;
+}
+
+.email,
+.tel {
+    font-family: 'futura-medium';
+    font-size: 2.4rem;
+    color: #005f96;
+}
+
+.founder-email a:link,
+.founder-email a:visited,
+.founder-tel a:link,
+.founder-tel a:visited {
+    text-decoration: none;
+    font-family: 'futura-light';
+    font-size: 2.4rem;
+    color: #005f96;
+    transition: all 0.2s;
+}
+
+.founder-email a:hover,
+.founder-email a:active,
+.founder-tel a:hover,
+.founder-tel a:active {
+    color: #ed7102;
+}
+
+.founder-tel {
+    padding-left: 1rem;
+}
+
+.founder-email .tel-div {
+    display: none;
+}
+.founder-tel .email-div {
+    display: none;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1200px) {
