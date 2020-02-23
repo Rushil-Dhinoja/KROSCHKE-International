@@ -338,16 +338,15 @@ body {
 .header__hero {
     display: flex;
     height: 100%;
-    background: url(../assets/demo-hero.png);
+    background: url(../assets/group.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
 }
 .header__hero-text {
     background: linear-gradient(to left, rgba(225, 225, 225, 0), #d8d8d8);
     height: 100%;
     z-index: 10;
-    width: 60%;
+    width: 70%;
 }
 
 .header__hero-text-container {
@@ -356,8 +355,8 @@ body {
 }
 
 .header__hero-text--primary {
-    font-size: 3.6rem;
-    line-height: 1.22;
+    font-size: 3.4rem;
+    line-height: 1.29;
     letter-spacing: normal;
     font-weight: bold;
     color: #005f96;
@@ -384,7 +383,7 @@ body {
 .benefits__items {
     width: 100%;
     margin: 0;
-    padding-bottom: 9rem;
+    padding-bottom: 6rem;
 }
 
 .benefits__item {
@@ -660,7 +659,7 @@ body {
 .map__map-content .content-container {
     border-bottom: 2px solid #37afb9;
     height: 33%;
-    padding-left: 5.6rem;    
+    padding-left: 5.6rem;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
     color: #005f96;
@@ -1098,7 +1097,67 @@ section:focus {
 .banner-btn {
     margin-left: 25px;
 }
+.portal {
+    margin-top: -1rem;
+    width: 100%;
+    display: flex;
+    z-index: -1;
+}
 
+.portal__description {
+    background-color: #37afb9;
+    width: 50%;
+    padding: 7rem 15rem 7rem 10rem;
+    box-sizing: border-box;
+}
+.portal__benefits {
+    padding-top: 1rem;
+    background-color: #a5d2d2;
+    width: 50%;
+    padding: 7rem 18rem 7rem 7rem;
+    box-sizing: border-box;
+}
+.portal__benefits ul {
+    list-style-type: none;
+}
+.portal__description-heading {
+    font-family: 'futura-bold';
+    text-align: left;
+}
+.portal__paragraph {
+    font-family: 'futura-light';
+    color: #fff;
+}
+.portal__paragraph:first-of-type {
+    font-size: 2.3rem;
+    margin: 2rem 0;
+}
+
+.portal__paragraph {
+    font-size: 1.8rem;
+    line-height: 1.33;
+}
+
+.portal__points-item {
+    display: flex;
+    fill: #005f96;
+    color: #005f96;
+    font-size: 1.8rem;
+    font-family: 'futura-light';
+}
+
+.portal__points-item:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+.portal__points-item div {
+    margin-right: 1rem;
+}
+
+.checkbox-container .checkbxoes-container-1 div {
+    display: flex;
+    width: calc(100% / 2);
+}
 /* Media Queries */
 
 @media only screen and (max-width: 1200px) {
@@ -1206,6 +1265,14 @@ section:focus {
 }
 
 @media only screen and (max-width: 800px) {
+    .h1,
+    .h2,
+    .h3,
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+    }
     .custom-checkbox {
         position: absolute;
         top: 0;
@@ -1256,7 +1323,7 @@ section:focus {
     .header__hero {
         flex-direction: column;
         background-image: none;
-        height: calc(100vh - 6.2rem);
+        height: 100vh;
     }
     .header__hero-text {
         background: none;
@@ -1275,7 +1342,7 @@ section:focus {
     }
     .header__background {
         order: -1;
-        background: url('../assets/demo-hero.png');
+        background: url('../assets/group.png');
         background-position: center;
         background-size: cover;
         height: 50vh;
@@ -1530,7 +1597,7 @@ section:focus {
     } */
     .dots-benefits {
         margin-top: 0;
-        padding-bottom: 2rem;
+        padding-bottom: 7rem;
     }
 
     .call-icon {
@@ -1642,6 +1709,9 @@ section:focus {
     .about__description {
         padding: 0 3rem;
     }
+    .benefits .benefits-heading-main {
+        padding: 4rem 15rem 6rem 15rem !important;
+    }
     .btn-center {
         margin: 0 3rem 10rem 3rem;
     }
@@ -1652,7 +1722,7 @@ section:focus {
     }
 
     .header__background {
-        height: 57%;
+        height: 50%;
     }
     .header__hero-text {
         height: 0%;
@@ -1664,7 +1734,7 @@ section:focus {
     }
 
     .header__hero-text-container {
-        margin: 7rem 5rem;
+        margin: 3rem 3rem;
     }
     .header__hero-text--primary {
         font-size: 3rem;
@@ -1675,8 +1745,8 @@ section:focus {
         line-height: 1.18;
     }
     .header-show {
-        height: 720%;
-        padding: 5rem 0;
+        height: 620%;
+        padding: 2rem 0;
     }
     .about__tiles {
         margin: 0;
@@ -1744,6 +1814,9 @@ section:focus {
     .heading-2 {
         padding: 4rem 15rem 6rem 15rem !important;
     }
+    .benefits .benefits-heading-main {
+        padding: 4rem 8rem 6rem 8rem !important;
+    }
 }
 
 @media only screen and (min-width: 1800px) {
@@ -1758,4 +1831,9 @@ section:focus {
     .container-sm {
         max-width: 100%;
     }
+}
+
+#myCarousel {
+    height: 50vh;
+    min-height: 50vh;
 }

@@ -197,37 +197,26 @@ var big = ['500.000', '120 Mio.', '12.000', '40.000', '300.000', '6,2 Mio'];
 var logoNum = 0;
 
 var path = [
-    'assets/tuv.PNG',
-    'assets/ssl-small.png',
-    'assets/tuv.PNG',
-    'assets/kfz-zulassungsdienst-ekomi.png'
-];
-
-var img = [
-    'assets/rsz_mockup_desktop__kfz-kennzeichen___final___hover.png',
-    'assets/rsz_mockup_desktop__kfz-kennzeichen___final___hover (1).png',
-    'assets/rsz_1mockup_desktop__kfz-kennzeichen___final___hover (1).png'
+    'assets/sgs-tuv-iso-9001-tcl.png',
+    'assets/ssl-logo.png',
+    'assets/sgs-tuv-iso-27001-tcl.png',
+    'assets/ekomi-gold.png'
 ];
 
 var logo = [
-    'assets/Anfahrtszeiten_Icon.png',
-    'assets/Icon_Angebot.png',
-    'assets/group-8-copy.png',
-    'assets/Icon_Carbon.png'
+    'assets/group-8.svg',
+    'assets/group-22_2.svg',
+    'assets/group-9.svg',
+    'assets/group-22.svg'
 ];
 
-var logoHeading = [
-    'Kurze Anfahrzeiten',
-    'Umfassendes Angebot',
-    'Attraktive Konditionen',
-    'Design-Highlights in Carbonoptik'
-];
+var logoHeading = ['Schnell', 'Vernetzt', 'Entlastend', 'Zuverlässig'];
 
 var logoContent = [
-    'Holen Sie Ihre Kennzeichen an 500 bundesweiten Standorten in Deutschland zeitnah ab.',
-    'Wählen Sie aus allen gängigen Kennzeichen-Typen und Größen – von E-Kennzeichen bis Saisonkennzeichen.',
-    'Profitieren Sie von Preisvorteilen, die wir als Kfz-Experten mit weitreichendem Netzwerk an Sie weiter geben.',
-    'Bestellen Sie individualisierte Kfz-Kennzeichen in Carbonoptik, die Ihre Kunden begeistern.'
+    'Lassen Sie Fahrzeuge regional noch am selben Tag, bundesweit innerhalb von 72 Stunden zu.',
+    'KfZ-Experten an über 500 Standorten bundesweit betreuen Ihre Zulassungen flächendeckend.',
+    'Unser Service schont die Ressourcen Ihrer Mitarbeiter, um Ihre Produk-tivität im Tagesgeschäft zu steigern.',
+    'Professionelle Prozesse ermöglichen Fahrzeugzulassungen, auch wenn Ihre Mitarbeiter ausfallen.'
 ];
 
 var imge = 2;
