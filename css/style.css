@@ -1039,6 +1039,23 @@ section:focus {
     flex-grow: 1;
 }
 
+#xing-icon{
+    width: 40px;
+    height: 35px;
+}
+#insta-icon{
+    width: 35px;
+    height: 35px;
+}
+#facebook-icon{
+    height: 35px;
+    width: 30px;
+}
+#twitter-icon{
+    width: 35px;
+    height: 30px;
+}
+
 .footer__content {
     display: flex;
     flex-direction: column;
@@ -1064,11 +1081,12 @@ section:focus {
     margin-right: 12rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .footer__social-links a:not(:last-child) {
     display: inline-block;
-    margin-right: 5rem;
+    margin-right: 6.5rem;
 }
 
 .footer__social-icon {
@@ -1177,7 +1195,7 @@ section:focus {
     padding-top: 1rem;
     background-color: #a5d2d2;
     width: 50%;
-    padding: 7rem 18rem 22rem 7rem;
+    padding: 7rem 10rem 22rem 7rem;
     box-sizing: border-box;
 }
 .portal__benefits ul {
@@ -1518,6 +1536,11 @@ section:focus {
         font-weight: normal;
     }
 
+    .footer__content p{
+        margin-bottom: 6rem;
+        line-height: 2;
+    }
+
     .show-more-description-2{
         display: none;
     }
@@ -1639,7 +1662,7 @@ section:focus {
 
     .portal__benefits {
         width: 100%;
-        padding: 7rem 2rem 7rem 2rem;
+        padding: 4rem 2rem 7rem 2rem;
     }
 
     .portal {
@@ -1928,7 +1951,7 @@ section:focus {
     }
 
     .footer__img {
-        width: 80%;
+        width: 62.5%;
     }
 
     .footer__content p {
@@ -1940,8 +1963,22 @@ section:focus {
         margin: 0 auto;
         padding-bottom: 2rem;
     }
+
+    .list__link-icon{
+        height: 1.5rem;
+        width: 2rem;
+    }
+
+    .footer__link-icon{
+        height: 1.5rem;
+        width: 2rem;
+    }
+
     .footer__links ul li {
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .show-more-about {
         display: none;
