@@ -1840,9 +1840,19 @@ section:focus {
         margin-top: 1.5rem;
     }
 
+    .tile-1,.tile-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__tile-content{
+        font-size: 2.2rem;
+    }
+
     .about__tile {
         width: 50%;
-        height: 50% !important;
+        height: 120px;
     }
     .about__tile:nth-of-type(1),
     .about__tile:nth-of-type(3),
