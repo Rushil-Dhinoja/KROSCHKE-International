@@ -2330,7 +2330,7 @@ section:focus {
     }
     .header-show {
         height: 400%;
-        padding: 5rem 0;
+        padding: 4rem 0 5rem 0;
     }
     .about__tiles {
         margin: 0;
