@@ -1668,7 +1668,7 @@ section:focus {
     }
 
     .header {
-        height:100vh;
+        height:90vh;
         max-height: 100vh;
     }
     .form-group {
