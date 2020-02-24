@@ -1093,6 +1093,18 @@ section:focus {
     transition: all 0.2s;
 }
 
+.about--secondary{
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'futura-light';
+    color: #005f96;
+    margin-bottom: 6rem;
+}
+
+#about-primary{
+    padding: 8rem 2rem 5rem 2rem !important;
+}
+
 .footer__links ul li a:hover {
     color: #005f96;
 }
@@ -1157,7 +1169,7 @@ section:focus {
 .portal__description {
     background-color: #37afb9;
     width: 50%;
-    padding: 7rem 15rem 7rem 10rem;
+    padding: 7rem 18rem 7rem 10rem;
     box-sizing: border-box;
 }
 .portal__benefits {
@@ -1171,7 +1183,7 @@ section:focus {
     list-style-type: none;
 }
 .portal__description-heading {
-    font-family: 'futura-bold';
+    font-family: 'futura-bold'; 
     text-align: left;
 }
 .portal__paragraph {
@@ -1179,12 +1191,12 @@ section:focus {
     color: #fff;
 }
 .portal__paragraph:first-of-type {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     margin: 2rem 0;
 }
 
 .portal__paragraph {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     line-height: 1.33;
 }
 
@@ -1217,7 +1229,7 @@ section:focus {
 .portal__img {
     position: absolute;
     left: 35%;
-    top: 65%;
+    top: 60%;
     width: 50rem;
 }
 
@@ -1520,7 +1532,7 @@ section:focus {
 
     .dots-founders {
         margin-top: 0;
-        padding-bottom: 5rem;
+        padding-bottom: 9rem;
         display: flex;
     }
 
@@ -1538,6 +1550,9 @@ section:focus {
     .stefan-gutwirth img {
         order: 2;
         margin-left: 3rem;
+
+        height: auto;
+
         width: 27rem;
         justify-content: end;
         align-items: flex-end;
@@ -1879,6 +1894,7 @@ section:focus {
 
     .about__description-content {
         width: 100%;
+        line-height: 1.33;
     }
 
     .contact__form-buttons {
@@ -1911,7 +1927,7 @@ section:focus {
     }
 
     .footer__content p {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .footer__links {
@@ -1998,8 +2014,11 @@ section:focus {
     .dots-grid {
         display: flex;
         margin: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 8rem;
+        margin-top: 4rem;
     }
+
+    
     .dot-active {
         position: relative;
     }
@@ -2051,7 +2070,7 @@ section:focus {
     }
 
     .footer__links ul li a {
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-align: center;
         align-self: center;
         justify-self: center;
@@ -2091,7 +2110,7 @@ section:focus {
     ol,
     ul {
         margin-top: 4rem;
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
     }
 
     .dot-white:not(:last-child) {
@@ -2198,6 +2217,21 @@ section:focus {
         padding: 4rem 15rem 3rem 15rem !important;
         text-align: center;
     }
+
+    .portal__paragraph:first-of-type{
+        font-size: 2.9rem;
+    }
+
+    .portal__paragraph{
+        font-size: 2.5rem;
+    }
+
+    .about--secondary{
+        text-align: left;
+        padding-left: 2rem;
+        font-size: 2.9rem;
+    }
+
     html {
         font-size: 37.5%;
     }
@@ -2222,7 +2256,7 @@ section:focus {
         text-align: left;
     }
     .founder-info {
-        margin: 0 auto 10rem auto;
+        margin: 0 auto 5rem auto;
         width: 90%;
         box-sizing: border-box;
     }
