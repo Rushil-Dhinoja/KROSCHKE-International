@@ -2178,11 +2178,12 @@ section:focus {
         justify-content: center;
         align-items: center;
         margin: 0;
+        height: 65px;
     }
 
     .brand__image:not(:last-child) {
         margin: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
 
     .brand__image-two,
