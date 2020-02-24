@@ -1668,7 +1668,7 @@ section:focus {
     }
 
     .header {
-        height:80vh;
+        height:100vh;
         max-height: 100vh;
     }
     .form-group {
@@ -2214,7 +2214,7 @@ section:focus {
     }
 
     .header__background {
-        height: 40%;
+        height: 50%;
     }
     .header__hero-text {
         height: 40%;
