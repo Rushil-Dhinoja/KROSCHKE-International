@@ -51,6 +51,31 @@ $(document).ready(() => {
         list.slideToggle(200);
     });
 
+    $('#list-item-1').click(() => {
+        $('#list-item-1').addClass('active-link');
+        $('#list-item-2').removeClass('active-link');
+        $('#list-item-3').removeClass('active-link');
+        $('#list-item-4').removeClass('active-link');
+    });
+    $('#list-item-2').click(() => {
+        $('#list-item-2').addClass('active-link');
+        $('#list-item-1').removeClass('active-link');
+        $('#list-item-3').removeClass('active-link');
+        $('#list-item-4').removeClass('active-link');
+    });
+    $('#list-item-3').click(() => {
+        $('#list-item-3').addClass('active-link');
+        $('#list-item-2').removeClass('active-link');
+        $('#list-item-1').removeClass('active-link');
+        $('#list-item-4').removeClass('active-link');
+    });
+    $('#list-item-4').click(() => {
+        $('#list-item-4').addClass('active-link');
+        $('#list-item-2').removeClass('active-link');
+        $('#list-item-3').removeClass('active-link');
+        $('#list-item-1').removeClass('active-link');
+    });
+
     $('.reval').click(() => {
         var list = $('.hidden-items');
         list.slideToggle(200);

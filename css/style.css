@@ -322,6 +322,9 @@ body {
     backface-visibility: hidden;
     font-weight: bold;
 }
+.active-link{
+    font-weight: bold;
+}
 
 .list__item:not(:last-child) {
     margin-right: 4.7rem;
