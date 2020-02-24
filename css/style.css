@@ -1846,6 +1846,10 @@ section:focus {
         align-items: center;
     }
 
+    .header__navigation{
+        height: 10rem;
+    }
+
     .about__tile-content{
         font-size: 2.2rem;
     }
