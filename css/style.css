@@ -1659,8 +1659,17 @@ section:focus {
         font-size: 2.5rem;
     }
 
+    .header__hero-text--secondary{
+        margin-top: 3rem;
+    }
+
+    .header__hero-text--primary{
+        width: 90%;
+    }
+
     .header {
-        height: 100vh;
+        height:80vh;
+        max-height: 100vh;
     }
     .form-group {
         flex-direction: column;
@@ -1728,7 +1737,7 @@ section:focus {
         order: -1;
         background: url('../assets/group.png');
         background-size: cover;
-        background-position: 85% 0;
+        background-position: 80% 0;
         background-repeat: no-repeat;
         height: 40vh;
     }
@@ -2052,6 +2061,8 @@ section:focus {
 
     .header---img {
         width: 70%;
+        display: inline-block;
+        padding: 1.5rem 0;
     }
 
     .benefits__items {
@@ -2206,7 +2217,7 @@ section:focus {
         height: 40%;
     }
     .header__hero-text {
-        height: 60%;
+        height: 40%;
     }
     .btn:link,
     .btn:visited {
@@ -2238,8 +2249,9 @@ section:focus {
         line-height: 1.18;
     }
     .header__hero-text--secondary {
-        font-size: 3rem;
+         margin-top: 4rem;
         line-height: 1.18;
+        margin-bottom: 7rem;
     }
     .header-show {
         height: 620%;
