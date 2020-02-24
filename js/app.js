@@ -39,11 +39,15 @@ $(document).ready(() => {
 
     $('.show-more').click(() => {
         var list = $('.services__items');
+        var data = $('.show-more-description');
+        data.slideToggle(200);
         list.slideToggle(200);
     });
 
     $('.show__more').click(() => {
         var list = $('.show-more-about');
+        var data = $('.show-more-description-2');
+        data.slideToggle(200);
         list.slideToggle(200);
     });
 
