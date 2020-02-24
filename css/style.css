@@ -2249,9 +2249,9 @@ section:focus {
         line-height: 1.35;
     }
     .header__hero-text--secondary {
-         margin-top: 4rem;
+         margin-top: 3rem;
         line-height: 1.18;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .header-show {
         height: 620%;
