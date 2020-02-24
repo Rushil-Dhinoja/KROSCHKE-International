@@ -331,7 +331,7 @@ if (widthScreen < 800) {
                 document.querySelector('.brand__image-one').src = path[0];
             }
         }
-    }, 20000);
+    }, 4000);
 
     setInterval(() => {
         if (widthScreen < 800) {
@@ -369,7 +369,7 @@ if (widthScreen < 800) {
                 logoNum = 0;
             }
         }
-    }, 20000);
+    }, 4000);
 }
 // SERVICES CAROUSEL{
 
