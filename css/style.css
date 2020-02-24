@@ -1775,6 +1775,7 @@ section:focus {
     .list__item:not(:last-child) {
         margin-top: 1.5rem;
         margin-right: 0;
+        margin-bottom: 2.5rem;
     }
     .list__item {
         display: block;
@@ -2329,7 +2330,7 @@ section:focus {
     }
     .header-show {
         height: 420%;
-        padding: 2rem 0;
+        padding: 5rem 0;
     }
     .about__tiles {
         margin: 0;
