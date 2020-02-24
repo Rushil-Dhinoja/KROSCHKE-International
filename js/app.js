@@ -252,7 +252,7 @@ if (widthScreen < 800) {
         //             <p class="info-post">Gebietsleiter Süd</p>
         //         </div>
         //     </div>
-    }, 2000);
+    }, 20000);
 }
 
 if (widthScreen < 800) {
@@ -398,4 +398,30 @@ document.querySelector('.btn-3').addEventListener('click', () => {
     document.querySelector('.btn-2').classList.remove('btn-active');
     document.querySelector('.btn-3').classList.add('btn-active');
     document.querySelector('.form--3').style.display = 'block';
+});
+
+// Dragable Sliders
+
+var founderSlide = document.getElementById('founder-slide');
+
+founderSlide.addEventListener('touchstart', () => {
+    if (document.getElementById('dot-zero-founder').classList.contains('dot-active-white')) {
+        document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
+        document.getElementById('dot-zero-founder').classList.remove('dot-active');
+        document.getElementById('dot-one-founder').classList.add('dot-active-white');
+        document.getElementById('dot-one-founder').classList.add('dot-active');
+
+        document.querySelector('.stefan-gutwirth img').src = founderImg[1];
+        document.querySelector('.stefan-gutwirth .info .info-name').textContent = founderName[1];
+        document.querySelector('.stefan-gutwirth .info .info-post').textContent = founderPost[1];
+    } else if (document.getElementById('dot-one-founder').classList.contains('dot-active-white')) {
+        document.getElementById('dot-one-founder').classList.remove('dot-active-white');
+        document.getElementById('dot-one-founder').classList.remove('dot-active');
+        document.getElementById('dot-zero-founder').classList.add('dot-active-white');
+        document.getElementById('dot-zero-founder').classList.add('dot-active');
+
+        document.querySelector('.stefan-gutwirth img').src = founderImg[0];
+        document.querySelector('.stefan-gutwirth .info .info-name').textContent = founderName[0];
+        document.querySelector('.stefan-gutwirth .info .info-post').textContent = founderPost[0];
+    }
 });
