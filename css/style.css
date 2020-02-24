@@ -2246,12 +2246,12 @@ section:focus {
     }
     .header__hero-text--primary {
         font-size: 3rem;
-        line-height: 1.18;
+        line-height: 1.35;
     }
     .header__hero-text--secondary {
          margin-top: 4rem;
         line-height: 1.18;
-        margin-bottom: 7rem;
+        margin-bottom: 2rem;
     }
     .header-show {
         height: 620%;
