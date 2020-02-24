@@ -252,7 +252,7 @@ if (widthScreen < 800) {
         //             <p class="info-post">Gebietsleiter Süd</p>
         //         </div>
         //     </div>
-    }, 20000);
+    }, 2000);
 }
 
 if (widthScreen < 800) {
