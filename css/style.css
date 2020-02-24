@@ -2082,6 +2082,8 @@ section:focus {
         background-color: #fff;
         border-radius: 50%;
     }
+
+
     /* .dot-white::after {
         content: '';
         position: absolute;
@@ -2283,6 +2285,11 @@ section:focus {
         text-align: center;
     }
 
+    .input-text{
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
     .portal__paragraph:first-of-type{
         font-size: 2.9rem;
     }
@@ -2414,6 +2421,26 @@ section:focus {
     }
     #checkbox-content {
         width: 90%;
+        font-size: 2.5rem;
+        line-height: 1.33;
+    }
+
+    .checkboxes-container div{
+        width: 100% !important;
+        
+    }
+
+    .checkbox-container .checkboxes-container-1 div{
+        width: 100%;
+    }
+
+    .checkbox-content{
+        padding: 0 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .form-btn-container{
+        text-align: center;
     }
 
     #__heading {

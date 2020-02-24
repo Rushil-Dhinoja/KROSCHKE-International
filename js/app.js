@@ -57,6 +57,21 @@ $(document).ready(() => {
         list.css('display', 'flex');
     });
 
+    $('#myCarousel').on('touchstart', function(event) {
+        var xClick = event.originalEvent.touches[0].pageX;
+        $('#myCarousel').one('touchmove', function(event) {
+            var xMove = event.originalEvent.touches[0].pageX;
+            if (Math.floor(xClick - xMove) > 5) {
+                $('#myCarousel').carousel('next');
+            } else if (Math.floor(xClick - xMove) < -5) {
+                $('#myCarousel').carousel('prev');
+            }
+        });
+        $('#myCarousel').on('touchend', function() {
+            $('#myCarousel').off('touchmove');
+        });
+    });
+
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
