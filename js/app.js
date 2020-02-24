@@ -252,7 +252,7 @@ if (widthScreen < 800) {
         //             <p class="info-post">Gebietsleiter Süd</p>
         //         </div>
         //     </div>
-    }, 20000);
+    }, 2000);
 }
 
 if (widthScreen < 800) {
@@ -404,23 +404,23 @@ document.querySelector('.btn-3').addEventListener('click', () => {
 
 var founderSlide = document.getElementById('founder-slide');
 
-var xCordStart = 0,
-    xCordEnd = 0;
+var xCordStartFounder = 0,
+    xCordEndFounder = 0;
 
 founderSlide.addEventListener('touchstart', (e) => {
-    xCordStart = 0;
-    xCordStart = e.touches[0].clientX;
+    xCordStartFounder = 0;
+    xCordStartFounder = e.touches[0].clientX;
     // console.log(xCordStart);
 });
 
 founderSlide.addEventListener('touchmove', (e) => {
-    xCordEnd = 0;
-    xCordEnd = e.touches[0].clientX;
+    xCordEndFounder = 0;
+    xCordEndFounder = e.touches[0].clientX;
     // console.log(xCordEnd);
 });
 
 founderSlide.addEventListener('touchend', (e) => {
-    if (xCordStart - xCordEnd > 100 && xCordStart - xCordEnd < 300) {
+    if (xCordStartFounder - xCordEndFounder > 100 && xCordStart - xCordEnd < 300) {
         if (widthScreen < 800) {
             if (
                 document.getElementById('dot-zero-founder').classList.contains('dot-active-white')
@@ -450,7 +450,7 @@ founderSlide.addEventListener('touchend', (e) => {
                     founderPost[0];
             }
         }
-    } else if (xCordStart - xCordEnd < -100) {
+    } else if (xCordStartFounder - xCordEndFounder < -100) {
         if (widthScreen < 800) {
             if (
                 document.getElementById('dot-zero-founder').classList.contains('dot-active-white')
@@ -483,9 +483,4 @@ founderSlide.addEventListener('touchend', (e) => {
     } else {
         console.log('touch');
     }
-
-    xCordEnd = 0;
-    xCordStart = 0;
 });
-
-console.log(xCordEnd, xCordStart);
