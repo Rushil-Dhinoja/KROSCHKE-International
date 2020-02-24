@@ -394,7 +394,6 @@ body {
 
 .header__background {
     height: 100%;
-    margin-top: 4rem;
 }
 
 .benefits {
@@ -859,7 +858,6 @@ section:focus {
 }
 .brand__image-one,
 .brand__image-three {
-    height: 6rem;
     width: 9rem;
 }
 
