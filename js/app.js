@@ -404,63 +404,88 @@ document.querySelector('.btn-3').addEventListener('click', () => {
 
 var founderSlide = document.getElementById('founder-slide');
 
-var xCord;
+var xCordStart = 0,
+    xCordEnd = 0;
+
 founderSlide.addEventListener('touchstart', (e) => {
-    xCord = e.touches[0].clientX;
+    xCordStart = 0;
+    xCordStart = e.touches[0].clientX;
+    // console.log(xCordStart);
 });
 
-founderSlide.addEventListener('touchend', () => {
-    if (xCord < 200) {
-        if (document.getElementById('dot-zero-founder').classList.contains('dot-active-white')) {
-            document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
-            document.getElementById('dot-zero-founder').classList.remove('dot-active');
-            document.getElementById('dot-one-founder').classList.add('dot-active-white');
-            document.getElementById('dot-one-founder').classList.add('dot-active');
+founderSlide.addEventListener('touchmove', (e) => {
+    xCordEnd = 0;
+    xCordEnd = e.touches[0].clientX;
+    // console.log(xCordEnd);
+});
 
-            document.querySelector('.stefan-gutwirth img').src = founderImg[1];
-            document.querySelector('.stefan-gutwirth .info .info-name').textContent =
-                founderName[1];
-            document.querySelector('.stefan-gutwirth .info .info-post').textContent =
-                founderPost[1];
-        } else if (
-            document.getElementById('dot-one-founder').classList.contains('dot-active-white')
-        ) {
-            document.getElementById('dot-one-founder').classList.remove('dot-active-white');
-            document.getElementById('dot-one-founder').classList.remove('dot-active');
-            document.getElementById('dot-zero-founder').classList.add('dot-active-white');
-            document.getElementById('dot-zero-founder').classList.add('dot-active');
+founderSlide.addEventListener('touchend', (e) => {
+    if (xCordStart - xCordEnd > 100 && xCordStart - xCordEnd < 300) {
+        if (widthScreen < 800) {
+            if (
+                document.getElementById('dot-zero-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.remove('dot-active');
+                document.getElementById('dot-one-founder').classList.add('dot-active-white');
+                document.getElementById('dot-one-founder').classList.add('dot-active');
 
-            document.querySelector('.stefan-gutwirth img').src = founderImg[0];
-            document.querySelector('.stefan-gutwirth .info .info-name').textContent =
-                founderName[0];
-            document.querySelector('.stefan-gutwirth .info .info-post').textContent =
-                founderPost[0];
+                document.querySelector('.stefan-gutwirth img').src = founderImg[1];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[1];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[1];
+            } else if (
+                document.getElementById('dot-one-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-one-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-one-founder').classList.remove('dot-active');
+                document.getElementById('dot-zero-founder').classList.add('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.add('dot-active');
+
+                document.querySelector('.stefan-gutwirth img').src = founderImg[0];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[0];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[0];
+            }
+        }
+    } else if (xCordStart - xCordEnd < -100) {
+        if (widthScreen < 800) {
+            if (
+                document.getElementById('dot-zero-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.remove('dot-active');
+                document.getElementById('dot-one-founder').classList.add('dot-active-white');
+                document.getElementById('dot-one-founder').classList.add('dot-active');
+
+                document.querySelector('.stefan-gutwirth img').src = founderImg[1];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[1];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[1];
+            } else if (
+                document.getElementById('dot-one-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-one-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-one-founder').classList.remove('dot-active');
+                document.getElementById('dot-zero-founder').classList.add('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.add('dot-active');
+
+                document.querySelector('.stefan-gutwirth img').src = founderImg[0];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[0];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[0];
+            }
         }
     } else {
-        if (document.getElementById('dot-zero-founder').classList.contains('dot-active-white')) {
-            document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
-            document.getElementById('dot-zero-founder').classList.remove('dot-active');
-            document.getElementById('dot-one-founder').classList.add('dot-active-white');
-            document.getElementById('dot-one-founder').classList.add('dot-active');
-
-            document.querySelector('.stefan-gutwirth img').src = founderImg[1];
-            document.querySelector('.stefan-gutwirth .info .info-name').textContent =
-                founderName[1];
-            document.querySelector('.stefan-gutwirth .info .info-post').textContent =
-                founderPost[1];
-        } else if (
-            document.getElementById('dot-one-founder').classList.contains('dot-active-white')
-        ) {
-            document.getElementById('dot-one-founder').classList.remove('dot-active-white');
-            document.getElementById('dot-one-founder').classList.remove('dot-active');
-            document.getElementById('dot-zero-founder').classList.add('dot-active-white');
-            document.getElementById('dot-zero-founder').classList.add('dot-active');
-
-            document.querySelector('.stefan-gutwirth img').src = founderImg[0];
-            document.querySelector('.stefan-gutwirth .info .info-name').textContent =
-                founderName[0];
-            document.querySelector('.stefan-gutwirth .info .info-post').textContent =
-                founderPost[0];
-        }
+        console.log('touch');
     }
+
+    xCordEnd = 0;
+    xCordStart = 0;
 });
+
+console.log(xCordEnd, xCordStart);
