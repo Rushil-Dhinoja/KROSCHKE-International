@@ -394,6 +394,7 @@ body {
 
 .header__background {
     height: 100%;
+    margin-top: 4rem;
 }
 
 .benefits {
