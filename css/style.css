@@ -2461,6 +2461,7 @@ section:focus {
     .header__hero-text {
         height: 40%;
     }
+    /* Do this */
     .btn:link,
     .btn:visited {
         font-size: 2.4rem;
