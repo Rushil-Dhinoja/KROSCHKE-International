@@ -234,6 +234,15 @@ var logo = [
     'assets/group-22.svg'
 ];
 
+var sub = [
+    'Kfz-Zulassungen/Jahr',
+    'Euro Gesamtumsatz',
+    'Autohaus-Kunden in der Betreuung',
+    'FahrzeughÜberfÜhrungen im Jahr',
+    'gelagerte Kfz-SchlÜssel',
+    'Kennzeichen pro Jahr'
+];
+
 var logoHeading = ['Schnell', 'Vernetzt', 'Entlastend', 'Zuverlässig'];
 
 var logoContent = [
@@ -313,6 +322,8 @@ if (widthScreen < 800) {
                     primary[2] + '<span class="big-text">' + big[2] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[3] + '<span class="big-text">' + big[3] + '</span>';
+                document.getElementById('abt-tile-1-sec').textContent = sub[2];
+                document.getElementById('abt-tile-2-sec').textContent = sub[3];
 
                 document.querySelector('.tile-1').style.backgroundColor = colrs[2];
                 document.querySelector('.tile-2').style.backgroundColor = colrs[0];
@@ -330,6 +341,9 @@ if (widthScreen < 800) {
                     primary[4] + '<span class="big-text">' + big[4] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[5] + '<span class="big-text">' + big[5] + '</span>';
+
+                document.getElementById('abt-tile-1-sec').textContent = sub[4];
+                document.getElementById('abt-tile-2-sec').textContent = sub[5];
 
                 document.querySelector('.tile-1').style.backgroundColor = colrs[1];
                 document.querySelector('.tile-2').style.backgroundColor = colrs[2];
@@ -350,6 +364,9 @@ if (widthScreen < 800) {
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[1] + '<span class="big-text">' + big[1] + '</span>';
 
+                document.getElementById('abt-tile-1-sec').textContent = sub[0];
+                document.getElementById('abt-tile-2-sec').textContent = sub[1];
+
                 document.querySelector('.tile-1').style.backgroundColor = colrs[2];
                 document.querySelector('.tile-2').style.backgroundColor = colrs[1];
 
@@ -360,6 +377,7 @@ if (widthScreen < 800) {
             }
         }
     }, 4000);
+
     setInterval(() => {
         if (widthScreen < 800) {
             if (document.getElementById('dot-zero-brands').classList.contains('dot-active-white')) {
@@ -568,8 +586,9 @@ aboutSlide.addEventListener('touchmove', (e) => {
     xCordEndAbout = e.touches[0].clientX;
     // console.log(xCordEnd);
 });
+
 aboutSlide.addEventListener('touchend', (e) => {
-    if (xCordStartAbout - xCordEndAbout > 100 && xCordStartAbout - xCordEndAbout < 350) {
+    if (xCordStartAbout - xCordEndAbout > 100 && xCordStartAbout - xCordEndAbout < 250) {
         if (widthScreen < 800) {
             document.getElementById('abt-tile-1').textContent = primary[0];
             document.getElementById('abt-tile-2').textContent = primary[1];

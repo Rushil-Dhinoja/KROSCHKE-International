@@ -84,7 +84,7 @@ body {
 
 .checkbox-label-container .custom-checkbox::after {
     left: 8px;
-    top: 4px;
+    top: 3px;
     width: 5px;
     height: 10px;
     border: solid white;
@@ -217,7 +217,7 @@ body {
 }
 
 .less-margin {
-    margin-right: 0;
+    margin-right: 1rem;
     height: 2rem;
     width: 2rem;
     transform: translateY(-2px);
@@ -409,9 +409,11 @@ body {
 }
 
 .benefits__items {
-    margin: 0 4rem;
+    margin: 0 12rem;
     padding-bottom: 6rem;
 }
+
+
 
 .benefits__item {
     padding: 0;
@@ -1577,6 +1579,25 @@ section:focus {
         font-weight: normal;
     }
 
+    .abt-tile-1{
+        line-height: 1.2;
+    }
+
+    
+    .abt-tile-1-sec{
+        line-height: 1.2;
+    }
+
+    .checkbox-label-container .custom-checkbox::after {
+        left: 5px;
+        top: 0px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+    }
+
     .footer__content p{
         margin-bottom: 6rem;
         line-height: 2;
@@ -1747,7 +1768,7 @@ section:focus {
     }
     .custom-checkbox {
         position: absolute;
-        top: -5;
+        top: 0;
         left: 0;
         height: 18px;
         width: 18px;
@@ -1790,8 +1811,8 @@ section:focus {
     }
 
     .header {
-        height:80vh;
-        max-height: 80vh;
+        height:75vh;
+        max-height: 75vh;
     }
     .form-group {
         flex-direction: column;
@@ -1818,7 +1839,7 @@ section:focus {
         margin-left: 0.5rem;
     }
     .show__more {
-        font-size: 2rem;
+        font-size: 2.5rem;
         display: block;
     }
 
@@ -1853,7 +1874,7 @@ section:focus {
         font-size: 3rem;
     }
     .header__hero-text--secondary {
-        font-size: 2.85rem;
+        font-size: 3rem;
     }
     .header__background {
         order: -1;
@@ -2078,7 +2099,8 @@ section:focus {
     .founder-email a:visited,
     .founder-tel a:link,
     .founder-tel a:visited {
-        font-size: 2.5rem;
+        font-size: 2.9rem;
+        line-height: 1.25;
     }
 
     .checkbox-container p{
@@ -2192,8 +2214,12 @@ section:focus {
         display: none;
     }
 
+    #heading-contact{
+        padding-bottom: 2rem !important;
+    }
+
     .contact__description {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     .footer__links ul li a {
@@ -2428,7 +2454,7 @@ section:focus {
         height: 40%;
     }
     .header__hero-text {
-        height: 40%;
+        height: 35%;
     }
     .btn:link,
     .btn:visited {
@@ -2456,7 +2482,7 @@ section:focus {
     .header__hero-text-container {
     }
     .header__hero-text--primary {
-        font-size: 3rem;
+        font-size: 3.2rem;
         line-height: 1.35;
     }
     .header__hero-text--secondary {
