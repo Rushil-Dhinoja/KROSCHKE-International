@@ -92,11 +92,11 @@ body {
     transform: rotate(45deg);
 }
 
-.contact-detail p{
+.contact-detail p {
     margin-bottom: 5px;
 }
 
-#heading-contact{
+#heading-contact {
     padding-bottom: 2rem !important;
 }
 
@@ -330,7 +330,7 @@ body {
     backface-visibility: hidden;
     font-weight: bold;
 }
-.active-link{
+.active-link {
     font-weight: bold;
 }
 
@@ -416,8 +416,6 @@ body {
     margin: 0 12rem;
     padding-bottom: 6rem;
 }
-
-
 
 .benefits__item {
     padding: 0;
@@ -643,8 +641,6 @@ h6 {
     font-weight: normal;
     margin-bottom: 3rem;
 }
-
-
 
 .carousel__content.active {
     display: initial;
@@ -946,7 +942,6 @@ section:focus {
     align-items: center;
 }
 
-
 .carousel__content--secondary {
     padding: 0 15rem;
     margin: 0 auto;
@@ -1086,19 +1081,19 @@ section:focus {
     flex-grow: 1;
 }
 
-#xing-icon{
+#xing-icon {
     width: 40px;
     height: 35px;
 }
-#insta-icon{
+#insta-icon {
     width: 35px;
     height: 35px;
 }
-#facebook-icon{
+#facebook-icon {
     height: 35px;
     width: 30px;
 }
-#twitter-icon{
+#twitter-icon {
     width: 35px;
     height: 30px;
 }
@@ -1159,7 +1154,7 @@ section:focus {
     transition: all 0.2s;
 }
 
-.about--secondary{
+.about--secondary {
     text-align: center;
     font-size: 2.3rem;
     font-family: 'futura-light';
@@ -1167,7 +1162,7 @@ section:focus {
     margin-bottom: 6rem;
 }
 
-#about-primary{
+#about-primary {
     padding: 8rem 2rem 5rem 2.5rem !important;
 }
 
@@ -1249,7 +1244,7 @@ section:focus {
     list-style-type: none;
 }
 .portal__description-heading {
-    font-family: 'futura-bold'; 
+    font-family: 'futura-bold';
     text-align: left;
 }
 .portal__paragraph {
@@ -1327,6 +1322,8 @@ section:focus {
 
 .stefan-gutwirth .info {
     margin-top: 1rem;
+    position: absolute;
+    top: -3rem;
 }
 
 .info-name {
@@ -1376,7 +1373,7 @@ section:focus {
 .email,
 .tel {
     font-family: 'futura-medium';
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     color: #005f96;
     margin-right: 0.7rem;
 }
@@ -1583,12 +1580,11 @@ section:focus {
         font-weight: normal;
     }
 
-    .abt-tile-1{
+    .abt-tile-1 {
         line-height: 1.2;
     }
 
-    
-    .abt-tile-1-sec{
+    .abt-tile-1-sec {
         line-height: 1.2;
     }
 
@@ -1602,12 +1598,12 @@ section:focus {
         transform: rotate(45deg);
     }
 
-    .footer__content p{
+    .footer__content p {
         margin-bottom: 6rem;
         line-height: 2;
     }
 
-    .show-more-description-2{
+    .show-more-description-2 {
         display: none;
     }
 
@@ -1667,21 +1663,31 @@ section:focus {
     }
     .stefan-gutwirth img {
         order: 2;
-        margin-left: 3rem;
-
+        margin-left: 25rem;
+        margin-bottom: -1rem;
         height: 27rem;
 
         width: 27rem;
         justify-content: end;
         align-items: flex-end;
-        flex
     }
     .stefan-gutwirth {
         width: 100%;
     }
 
+    #founder-slide {
+        margin-bottom: -5px;
+        height: 80%;
+        position: relative;
+    }
+
+    .founder-info {
+        overflow: hidden;
+    }
+
     .info-name {
         font-size: 2.5rem;
+        padding-left: 10px;
     }
     .info-post {
         font-size: 2.5rem;
@@ -1780,11 +1786,11 @@ section:focus {
         border: 2px solid #fff;
     }
 
-    .contact-detail .bold-text{
+    .contact-detail .bold-text {
         display: block;
     }
 
-    .contact-detail{
+    .contact-detail {
         font-size: 2rem;
         line-height: 1.33;
     }
@@ -1806,16 +1812,16 @@ section:focus {
         font-size: 2.5rem;
     }
 
-    .header__hero-text--secondary{
+    .header__hero-text--secondary {
         margin-top: 3rem;
     }
 
-    .header__hero-text--primary{
+    .header__hero-text--primary {
         width: 90%;
     }
 
     .header {
-        height:80vh;
+        height: 80vh;
         max-height: 80vh;
     }
     .form-group {
@@ -1891,7 +1897,7 @@ section:focus {
     .header-show {
         display: block;
         position: absolute;
-        top: 6.2rem;
+        top: 6rem;
         background-color: rgba(0, 95, 150, 0.9);
         width: 100%;
         height: 210%;
@@ -1987,17 +1993,18 @@ section:focus {
         margin-top: 1.5rem;
     }
 
-    .tile-1,.tile-2{
+    .tile-1,
+    .tile-2 {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .header__navigation{
+    .header__navigation {
         height: 10rem;
     }
 
-    .about__tile-content{
+    .about__tile-content {
         font-size: 2.2rem;
     }
 
@@ -2068,12 +2075,12 @@ section:focus {
         padding-bottom: 2rem;
     }
 
-    .list__link-icon{
+    .list__link-icon {
         height: 1.5rem;
         width: 2rem;
     }
 
-    .footer__link-icon{
+    .footer__link-icon {
         height: 1.5rem;
         width: 2rem;
     }
@@ -2103,11 +2110,11 @@ section:focus {
     .founder-email a:visited,
     .founder-tel a:link,
     .founder-tel a:visited {
-        font-size: 2.9rem;
+        font-size: 3.2rem;
         line-height: 1.25;
     }
 
-    .checkbox-container p{
+    .checkbox-container p {
         font-size: 2.5rem;
     }
 
@@ -2169,7 +2176,6 @@ section:focus {
         margin-top: 4rem;
     }
 
-    
     .dot-active {
         position: relative;
     }
@@ -2191,7 +2197,6 @@ section:focus {
         background-color: #fff;
         border-radius: 50%;
     }
-
 
     /* .dot-white::after {
         content: '';
@@ -2218,7 +2223,7 @@ section:focus {
         display: none;
     }
 
-    #heading-contact{
+    #heading-contact {
         padding-bottom: 2rem !important;
     }
 
@@ -2288,7 +2293,7 @@ section:focus {
         padding-bottom: 8rem;
     }
 
-    .brand__image{
+    .brand__image {
         height: 60px;
         width: 80px;
     }
@@ -2300,7 +2305,7 @@ section:focus {
         margin: 0 auto;
         height: 60px;
         width: 100%;
-        text-align: center; 
+        text-align: center;
     }
 
     .brand__image:not(:last-child) {
@@ -2357,29 +2362,29 @@ section:focus {
         width: 2rem !important;
     }
 
-    .services__item-description{
+    .services__item-description {
         font-size: 2.5rem;
     }
 
-    .services__content-container svg{
+    .services__content-container svg {
         width: 1.5rem;
         height: 2rem;
         align-self: flex-start;
-        margin-top: .5rem;
+        margin-top: 0.5rem;
     }
 
-    .services__item-heading{
+    .services__item-heading {
         font-size: 2.5rem;
         margin-bottom: 1rem;
         line-height: 1.33;
-        margin-left: 1rem
+        margin-left: 1rem;
     }
 
     .services__description {
         font-size: 2.5rem;
     }
 
-    .show-more-description{
+    .show-more-description {
         display: none;
     }
 }
@@ -2406,20 +2411,20 @@ section:focus {
         text-align: center;
     }
 
-    .input-text{
+    .input-text {
         font-size: 3rem;
         margin-bottom: 3rem;
     }
 
-    .portal__paragraph:first-of-type{
+    .portal__paragraph:first-of-type {
         font-size: 2.9rem;
     }
 
-    .portal__paragraph{
+    .portal__paragraph {
         font-size: 2.5rem;
     }
 
-    .about--secondary{
+    .about--secondary {
         text-align: left;
         padding-left: 2rem;
         font-size: 2.9rem;
@@ -2492,13 +2497,17 @@ section:focus {
         line-height: 1.35;
     }
     .header__hero-text--secondary {
-         margin-top: 3rem;
+        margin-top: 3rem;
         line-height: 1.18;
         margin-bottom: 1rem;
     }
     .header-show {
-        height: 400%;
+        height: 441%;
         padding: 4rem 0 5rem 0;
+    }
+    .brand__image {
+        width: 90px;
+        height: 60px;
     }
     .about__tiles {
         margin: 0;
@@ -2548,21 +2557,20 @@ section:focus {
         line-height: 1.33;
     }
 
-    .checkboxes-container div{
+    .checkboxes-container div {
         width: 100% !important;
-        
     }
 
-    .checkbox-container .checkboxes-container-1 div{
+    .checkbox-container .checkboxes-container-1 div {
         width: 100%;
     }
 
-    .checkbox-content{
+    .checkbox-content {
         padding: 0 1.5rem;
         font-size: 2.5rem;
     }
 
-    .form-btn-container{
+    .form-btn-container {
         text-align: center;
     }
 
