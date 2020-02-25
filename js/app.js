@@ -221,10 +221,10 @@ var big = ['500.000', '120 Mio.', '12.000', '40.000', '300.000', '6,2 Mio'];
 var logoNum = 0;
 
 var path = [
-    'assets/sgs-tuv-iso-9001-tcl.png',
-    'assets/ssl-logo.png',
-    'assets/sgs-tuv-iso-27001-tcl.png',
-    'assets/ekomi-gold.png'
+    'Fiverr_Zulassungen_Assets/SGS_TUV_ISO_9001_TCL.png',
+    'Fiverr_Zulassungen_Assets/ssl-logo.png',
+    'Fiverr_Zulassungen_Assets/SGS_TUV_ISO_27001_TCL.png',
+    'Fiverr_Zulassungen_Assets/ekomi_gold.png'
 ];
 
 var logo = [
@@ -242,6 +242,8 @@ var logoContent = [
     'Unser Service schont die Ressourcen Ihrer Mitarbeiter, um Ihre Produk-tivität im Tagesgeschäft zu steigern.',
     'Professionelle Prozesse ermöglichen Fahrzeugzulassungen, auch wenn Ihre Mitarbeiter ausfallen.'
 ];
+
+var colrs = ['#a5d2d2', '#005f96', '#37afb9'];
 
 var founderImg = [
     'assets/stefan-gutwirth-stockimage@3x.png',
@@ -311,6 +313,13 @@ if (widthScreen < 800) {
                     primary[2] + '<span class="big-text">' + big[2] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[3] + '<span class="big-text">' + big[3] + '</span>';
+
+                document.querySelector('.tile-1').style.backgroundColor = colrs[2];
+                document.querySelector('.tile-2').style.backgroundColor = colrs[0];
+
+                document.getElementById('change-tile-1').style.color = colrs[1];
+                document.getElementById('change-tile-2').style.color = colrs[1];
+                document.getElementById('abt-tile-2').style.borderBottom = ' 3px solid #004b78 ';
             } else if (document.getElementById('dot-two').classList.contains('dot-active-white')) {
                 document.getElementById('dot-two').classList.remove('dot-active-white');
                 document.getElementById('dot-two').classList.remove('dot-active');
@@ -321,6 +330,14 @@ if (widthScreen < 800) {
                     primary[4] + '<span class="big-text">' + big[4] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[5] + '<span class="big-text">' + big[5] + '</span>';
+
+                document.querySelector('.tile-1').style.backgroundColor = colrs[1];
+                document.querySelector('.tile-2').style.backgroundColor = colrs[2];
+
+                document.getElementById('change-tile-1').style.color = '#fff';
+                document.getElementById('change-tile-2').style.color = '#fff';
+                document.getElementById('abt-tile-1').style.borderBottom = ' 3px solid #fff';
+                document.getElementById('abt-tile-2').style.borderBottom = ' 3px solid #fff';
             } else if (
                 document.getElementById('dot-three').classList.contains('dot-active-white')
             ) {
@@ -332,10 +349,17 @@ if (widthScreen < 800) {
                     primary[0] + '<span class="big-text">' + big[0] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[1] + '<span class="big-text">' + big[1] + '</span>';
+
+                document.querySelector('.tile-1').style.backgroundColor = colrs[2];
+                document.querySelector('.tile-2').style.backgroundColor = colrs[1];
+
+                document.getElementById('change-tile-1').style.color = colrs[1];
+                document.getElementById('change-tile-2').style.color = '#fff';
+                document.getElementById('abt-tile-1').style.borderBottom = ' 3px solid ' + colrs[1];
+                document.getElementById('abt-tile-2').style.borderBottom = ' 3px solid #fff';
             }
         }
     }, 4000);
-
     setInterval(() => {
         if (widthScreen < 800) {
             if (document.getElementById('dot-zero-brands').classList.contains('dot-active-white')) {
@@ -460,7 +484,7 @@ founderSlide.addEventListener('touchmove', (e) => {
 });
 
 founderSlide.addEventListener('touchend', (e) => {
-    if (xCordStartFounder - xCordEndFounder > 100 && xCordStartFounder - xCordEndFounder < 300) {
+    if (xCordStartFounder - xCordEndFounder > 100 && xCordStartFounder - xCordEndFounder < 350) {
         if (widthScreen < 800) {
             if (
                 document.getElementById('dot-zero-founder').classList.contains('dot-active-white')
@@ -544,9 +568,8 @@ aboutSlide.addEventListener('touchmove', (e) => {
     xCordEndAbout = e.touches[0].clientX;
     // console.log(xCordEnd);
 });
-
 aboutSlide.addEventListener('touchend', (e) => {
-    if (xCordStartAbout - xCordEndAbout > 100 && xCordStartAbout - xCordEndAbout < 250) {
+    if (xCordStartAbout - xCordEndAbout > 100 && xCordStartAbout - xCordEndAbout < 350) {
         if (widthScreen < 800) {
             document.getElementById('abt-tile-1').textContent = primary[0];
             document.getElementById('abt-tile-2').textContent = primary[1];
@@ -561,6 +584,13 @@ aboutSlide.addEventListener('touchend', (e) => {
                     primary[2] + '<span class="big-text">' + big[2] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[3] + '<span class="big-text">' + big[3] + '</span>';
+
+                document.querySelector('.tile-1').style.backgroundColor = colrs[2];
+                document.querySelector('.tile-2').style.backgroundColor = colrs[0];
+
+                document.getElementById('change-tile-1').style.color = colrs[1];
+                document.getElementById('change-tile-2').style.color = colrs[1];
+                document.getElementById('abt-tile-2').style.borderBottom = ' 3px solid #004b78 ';
             } else if (document.getElementById('dot-two').classList.contains('dot-active-white')) {
                 document.getElementById('dot-two').classList.remove('dot-active-white');
                 document.getElementById('dot-two').classList.remove('dot-active');
@@ -571,6 +601,13 @@ aboutSlide.addEventListener('touchend', (e) => {
                     primary[4] + '<span class="big-text">' + big[4] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[5] + '<span class="big-text">' + big[5] + '</span>';
+                document.querySelector('.tile-1').style.backgroundColor = colrs[1];
+                document.querySelector('.tile-2').style.backgroundColor = colrs[2];
+
+                document.getElementById('change-tile-1').style.color = '#fff';
+                document.getElementById('change-tile-2').style.color = '#fff';
+                document.getElementById('abt-tile-1').style.borderBottom = ' 3px solid #fff';
+                document.getElementById('abt-tile-2').style.borderBottom = ' 3px solid #fff';
             } else if (
                 document.getElementById('dot-three').classList.contains('dot-active-white')
             ) {
@@ -582,6 +619,14 @@ aboutSlide.addEventListener('touchend', (e) => {
                     primary[0] + '<span class="big-text">' + big[0] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[1] + '<span class="big-text">' + big[1] + '</span>';
+
+                document.querySelector('.tile-1').style.backgroundColor = colrs[2];
+                document.querySelector('.tile-2').style.backgroundColor = colrs[1];
+
+                document.getElementById('change-tile-1').style.color = colrs[1];
+                document.getElementById('change-tile-2').style.color = '#fff';
+                document.getElementById('abt-tile-1').style.borderBottom = ' 3px solid ' + colrs[1];
+                document.getElementById('abt-tile-2').style.borderBottom = ' 3px solid #fff';
             }
         }
     } else if (xCordStartAbout - xCordEndAbout < -100) {
@@ -599,6 +644,14 @@ aboutSlide.addEventListener('touchend', (e) => {
                     primary[4] + '<span class="big-text">' + big[4] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[5] + '<span class="big-text">' + big[5] + '</span>';
+
+                document.querySelector('.tile-1').style.backgroundColor = colrs[1];
+                document.querySelector('.tile-2').style.backgroundColor = colrs[2];
+
+                document.getElementById('change-tile-1').style.color = '#fff';
+                document.getElementById('change-tile-2').style.color = '#fff';
+                document.getElementById('abt-tile-1').style.borderBottom = ' 3px solid #fff';
+                document.getElementById('abt-tile-2').style.borderBottom = ' 3px solid #fff';
             } else if (
                 document.getElementById('dot-three').classList.contains('dot-active-white')
             ) {
@@ -610,6 +663,14 @@ aboutSlide.addEventListener('touchend', (e) => {
                     primary[2] + '<span class="big-text">' + big[2] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[3] + '<span class="big-text">' + big[3] + '</span>';
+
+                document.querySelector('.tile-1').style.backgroundColor = colrs[2];
+                document.querySelector('.tile-2').style.backgroundColor = colrs[0];
+
+                document.getElementById('change-tile-1').style.color = colrs[1];
+                document.getElementById('change-tile-2').style.color = colrs[1];
+                document.getElementById('abt-tile-1').style.borderBottom = ' 3px solid ' + colrs[1];
+                document.getElementById('abt-tile-2').style.borderBottom = ' 3px solid ' + colrs[1];
             } else if (document.getElementById('dot-two').classList.contains('dot-active-white')) {
                 document.getElementById('dot-two').classList.remove('dot-active-white');
                 document.getElementById('dot-two').classList.remove('dot-active');
@@ -619,6 +680,15 @@ aboutSlide.addEventListener('touchend', (e) => {
                     primary[0] + '<span class="big-text">' + big[0] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[1] + '<span class="big-text">' + big[1] + '</span>';
+
+                document.querySelector('.tile-1').style.backgroundColor = colrs[2];
+                document.querySelector('.tile-2').style.backgroundColor = colrs[1];
+
+                document.getElementById('change-tile-1').style.color = colrs[1];
+                document.getElementById('change-tile-2').style.color = '#fff';
+
+                document.getElementById('abt-tile-1').style.borderBottom = ' 3px solid ' + colrs[1];
+                document.getElementById('abt-tile-2').style.borderBottom = ' 3px solid #fff';
             }
         }
     } else {
@@ -647,7 +717,7 @@ brandsSlide.addEventListener('touchmove', (e) => {
 });
 
 brandsSlide.addEventListener('touchend', (e) => {
-    if (xCordStartBrand - xCordEndBrand > 100 && xCordStartBrand - xCordEndBrand < 250) {
+    if (xCordStartBrand - xCordEndBrand > 100 && xCordStartBrand - xCordEndBrand < 350) {
         if (widthScreen < 800) {
             if (document.getElementById('dot-zero-brands').classList.contains('dot-active-white')) {
                 document.getElementById('dot-zero-brands').classList.remove('dot-active-white');
@@ -743,7 +813,7 @@ benefitsSlide.addEventListener('touchmove', (e) => {
 });
 
 benefitsSlide.addEventListener('touchend', (e) => {
-    if (xCordStartBenefit - xCordEndBenefit > 100 && xCordStartBenefit - xCordEndBenefit < 250) {
+    if (xCordStartBenefit - xCordEndBenefit > 100 && xCordStartBenefit - xCordEndBenefit < 350) {
         if (widthScreen < 800) {
             if (logoNum === 0) {
                 document.getElementById('benefits-img').src = logo[1];
