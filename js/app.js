@@ -908,3 +908,51 @@ benefitsSlide.addEventListener('touchend', (e) => {
         console.log('touch');
     }
 });
+
+// Click Buttons
+
+//benefits
+
+// document.getElementById('dot-zero-benefit').addEventListener('click', () => {
+//     document.getElementById('dot-zero-benefit').classList.add('dot-active');
+//     document.getElementById('dot-one-benefit').classList.remove('dot-active');
+//     document.getElementById('dot-two-benefit').classList.remove('dot-active');
+//     document.getElementById('dot-three-benefit').classList.remove('dot-active');
+
+//     document.getElementById('benefits-img').src = logo[0];
+//     document.getElementById('benefits-heading').textContent = logoHeading[0];
+//     document.getElementById('benefits-content').textContent = logoContent[0];
+// });
+
+// document.getElementById('dot-one-benefit').addEventListener('click', () => {
+//     document.getElementById('dot-zero-benefit').classList.remove('dot-active');
+//     document.getElementById('dot-one-benefit').classList.add('dot-active');
+//     document.getElementById('dot-two-benefit').classList.remove('dot-active');
+//     document.getElementById('dot-three-benefit').classList.remove('dot-active');
+
+//     document.getElementById('benefits-img').src = logo[1];
+//     document.getElementById('benefits-heading').textContent = logoHeading[1];
+//     document.getElementById('benefits-content').textContent = logoContent[1];
+// });
+
+// document.getElementById('dot-two-benefit').addEventListener('click', () => {
+//     document.getElementById('dot-zero-benefit').classList.remove('dot-active');
+//     document.getElementById('dot-one-benefit').classList.remove('dot-active');
+//     document.getElementById('dot-two-benefit').classList.add('dot-active');
+//     document.getElementById('dot-three-benefit').classList.remove('dot-active');
+
+//     document.getElementById('benefits-img').src = logo[2];
+//     document.getElementById('benefits-heading').textContent = logoHeading[2];
+//     document.getElementById('benefits-content').textContent = logoContent[2];
+// });
+
+// document.getElementById('dot-three-benefit').addEventListener('click', () => {
+//     document.getElementById('dot-zero-benefit').classList.remove('dot-active');
+//     document.getElementById('dot-one-benefit').classList.remove('dot-active');
+//     document.getElementById('dot-two-benefit').classList.remove('dot-active');
+//     document.getElementById('dot-three-benefit').classList.add('dot-active');
+
+//     document.getElementById('benefits-img').src = logo[3];
+//     document.getElementById('benefits-heading').textContent = logoHeading[3];
+//     document.getElementById('benefits-content').textContent = logoContent[3];
+// });

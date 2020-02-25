@@ -1815,8 +1815,8 @@ section:focus {
     }
 
     .header {
-        height:75vh;
-        max-height: 75vh;
+        height:77vh;
+        max-height: 77vh;
     }
     .form-group {
         flex-direction: column;
@@ -2458,7 +2458,7 @@ section:focus {
         height: 40%;
     }
     .header__hero-text {
-        height: 35%;
+        height: 37%;
     }
     .btn:link,
     .btn:visited {
