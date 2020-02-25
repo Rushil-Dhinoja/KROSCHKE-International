@@ -717,7 +717,7 @@ brandsSlide.addEventListener('touchmove', (e) => {
 });
 
 brandsSlide.addEventListener('touchend', (e) => {
-    if (xCordStartBrand - xCordEndBrand > 100 && xCordStartBrand - xCordEndBrand < 350) {
+    if (xCordStartBrand - xCordEndBrand > 100) {
         if (widthScreen < 800) {
             if (document.getElementById('dot-zero-brands').classList.contains('dot-active-white')) {
                 document.getElementById('dot-zero-brands').classList.remove('dot-active-white');
