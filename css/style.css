@@ -609,7 +609,7 @@ h6 {
     font-weight: normal;
 }
 .carousel-indicators {
-    bottom: 10px !important;
+    bottom: 30px !important;
 }
 
 #content--primary-2 {
@@ -2318,8 +2318,8 @@ section:focus {
     }
 
     #myCarousel {
-        height: 40vh;
-        min-height: 40vh;
+        height: 45vh;
+        min-height: 45vh;
     }
 
     .show-more-svg {
