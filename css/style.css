@@ -1576,11 +1576,11 @@ section:focus {
         font-weight: normal;
     }
 
-    .abt-tile-1 {
+    #abt-tile-1 {
         line-height: 1.2;
     }
 
-    .abt-tile-1-sec {
+    #abt-tile-1-sec {
         line-height: 1.2;
     }
 

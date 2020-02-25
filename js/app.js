@@ -386,15 +386,22 @@ if (widthScreen < 800) {
                 document.getElementById('dot-one-brands').classList.add('dot-active-white');
                 document.getElementById('dot-one-brands').classList.add('dot-active');
 
+                document.querySelector('.brand__image-one').style.width = '91.1px';
+                document.querySelector('.brand__image-one').style.height = '91.1px';
+
                 document.querySelector('.brand__image-one').src = path[1];
             } else if (
                 document.getElementById('dot-one-brands').classList.contains('dot-active-white')
             ) {
+                // ddd
                 document.getElementById('dot-one-brands').classList.remove('dot-active-white');
                 document.getElementById('dot-one-brands').classList.remove('dot-active');
                 document.getElementById('dot-two-brands').classList.add('dot-active-white');
                 document.getElementById('dot-two-brands').classList.add('dot-active');
                 document.querySelector('.brand__image-one').src = path[2];
+
+                document.querySelector('.brand__image-one').style.width = '92px';
+                document.querySelector('.brand__image-one').style.height = '76px';
             } else if (
                 document.getElementById('dot-two-brands').classList.contains('dot-active-white')
             ) {
@@ -403,6 +410,9 @@ if (widthScreen < 800) {
                 document.getElementById('dot-three-brands').classList.add('dot-active-white');
                 document.getElementById('dot-three-brands').classList.add('dot-active');
                 document.querySelector('.brand__image-one').src = path[3];
+
+                document.querySelector('.brand__image-one').style.width = '91.1px';
+                document.querySelector('.brand__image-one').style.height = '91.1px';
             } else if (
                 document.getElementById('dot-three-brands').classList.contains('dot-active-white')
             ) {
@@ -411,6 +421,9 @@ if (widthScreen < 800) {
                 document.getElementById('dot-zero-brands').classList.add('dot-active-white');
                 document.getElementById('dot-zero-brands').classList.add('dot-active');
                 document.querySelector('.brand__image-one').src = path[0];
+
+                document.querySelector('.brand__image-one').style.width = '92px';
+                document.querySelector('.brand__image-one').style.height = '76px';
             }
         }
     }, 4000);
@@ -586,7 +599,6 @@ aboutSlide.addEventListener('touchmove', (e) => {
     xCordEndAbout = e.touches[0].clientX;
     // console.log(xCordEnd);
 });
-
 aboutSlide.addEventListener('touchend', (e) => {
     if (xCordStartAbout - xCordEndAbout > 100 && xCordStartAbout - xCordEndAbout < 250) {
         if (widthScreen < 800) {
@@ -736,7 +748,7 @@ brandsSlide.addEventListener('touchmove', (e) => {
 });
 
 brandsSlide.addEventListener('touchend', (e) => {
-    if (xCordStartBrand - xCordEndBrand > 100) {
+    if (xCordStartBrand - xCordEndBrand > 100 && xCordStartBrand - xCordEndBrand < 250) {
         if (widthScreen < 800) {
             if (document.getElementById('dot-zero-brands').classList.contains('dot-active-white')) {
                 document.getElementById('dot-zero-brands').classList.remove('dot-active-white');
@@ -744,6 +756,8 @@ brandsSlide.addEventListener('touchend', (e) => {
                 document.getElementById('dot-one-brands').classList.add('dot-active-white');
                 document.getElementById('dot-one-brands').classList.add('dot-active');
 
+                document.querySelector('.brand__image-one').style.width = '91.1px';
+                document.querySelector('.brand__image-one').style.height = '91.1px';
                 document.querySelector('.brand__image-one').src = path[1];
             } else if (
                 document.getElementById('dot-one-brands').classList.contains('dot-active-white')
@@ -752,6 +766,9 @@ brandsSlide.addEventListener('touchend', (e) => {
                 document.getElementById('dot-one-brands').classList.remove('dot-active');
                 document.getElementById('dot-two-brands').classList.add('dot-active-white');
                 document.getElementById('dot-two-brands').classList.add('dot-active');
+
+                document.querySelector('.brand__image-one').style.width = '92px';
+                document.querySelector('.brand__image-one').style.height = '76px';
                 document.querySelector('.brand__image-one').src = path[2];
             } else if (
                 document.getElementById('dot-two-brands').classList.contains('dot-active-white')
@@ -761,6 +778,9 @@ brandsSlide.addEventListener('touchend', (e) => {
                 document.getElementById('dot-three-brands').classList.add('dot-active-white');
                 document.getElementById('dot-three-brands').classList.add('dot-active');
                 document.querySelector('.brand__image-one').src = path[3];
+
+                document.querySelector('.brand__image-one').style.width = '91.1px';
+                document.querySelector('.brand__image-one').style.height = '91.1px';
             } else if (
                 document.getElementById('dot-three-brands').classList.contains('dot-active-white')
             ) {
@@ -769,6 +789,9 @@ brandsSlide.addEventListener('touchend', (e) => {
                 document.getElementById('dot-zero-brands').classList.add('dot-active-white');
                 document.getElementById('dot-zero-brands').classList.add('dot-active');
                 document.querySelector('.brand__image-one').src = path[0];
+
+                document.querySelector('.brand__image-one').style.width = '92px';
+                document.querySelector('.brand__image-one').style.height = '76px';
             }
         }
     } else if (xCordStartBrand - xCordEndBrand < -100) {
@@ -779,6 +802,8 @@ brandsSlide.addEventListener('touchend', (e) => {
                 document.getElementById('dot-three-brands').classList.add('dot-active-white');
                 document.getElementById('dot-three-brands').classList.add('dot-active');
 
+                document.querySelector('.brand__image-one').style.width = '91.1px';
+                document.querySelector('.brand__image-one').style.height = '91.1px';
                 document.querySelector('.brand__image-one').src = path[3];
             } else if (
                 document.getElementById('dot-three-brands').classList.contains('dot-active-white')
@@ -788,6 +813,9 @@ brandsSlide.addEventListener('touchend', (e) => {
                 document.getElementById('dot-two-brands').classList.add('dot-active-white');
                 document.getElementById('dot-two-brands').classList.add('dot-active');
                 document.querySelector('.brand__image-one').src = path[2];
+
+                document.querySelector('.brand__image-one').style.width = '92px';
+                document.querySelector('.brand__image-one').style.height = '76px';
             } else if (
                 document.getElementById('dot-two-brands').classList.contains('dot-active-white')
             ) {
@@ -796,6 +824,9 @@ brandsSlide.addEventListener('touchend', (e) => {
                 document.getElementById('dot-one-brands').classList.add('dot-active-white');
                 document.getElementById('dot-one-brands').classList.add('dot-active');
                 document.querySelector('.brand__image-one').src = path[1];
+
+                document.querySelector('.brand__image-one').style.width = '91.1px';
+                document.querySelector('.brand__image-one').style.height = '91.1px';
             } else if (
                 document.getElementById('dot-one-brands').classList.contains('dot-active-white')
             ) {
@@ -804,13 +835,15 @@ brandsSlide.addEventListener('touchend', (e) => {
                 document.getElementById('dot-zero-brands').classList.add('dot-active-white');
                 document.getElementById('dot-zero-brands').classList.add('dot-active');
                 document.querySelector('.brand__image-one').src = path[0];
+
+                document.querySelector('.brand__image-one').style.width = '91.1px';
+                document.querySelector('.brand__image-one').style.height = '91.1px';
             }
         }
     } else {
         console.log('touch');
     }
 });
-
 //Benefits Slide
 
 var benefitsSlide = document.getElementById('benefits-slide');
