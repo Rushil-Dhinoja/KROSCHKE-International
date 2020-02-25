@@ -1317,7 +1317,7 @@ section:focus {
 .info {
     margin-top: 2rem;
     margin-left: -2rem;
-    z-index: 50;
+    z-index: 0;
 }
 
 .info-name {
@@ -1346,10 +1346,12 @@ section:focus {
     padding-top: 1rem;
     padding-left: 3rem;
     width: 19rem;
+    height: 19rem;
 }
 
 .stefan-gutwirth img {
     width: 19rem;
+    height: 19rem;
 }
 
 .founders__contact-info {
@@ -1367,7 +1369,7 @@ section:focus {
 .email,
 .tel {
     font-family: 'futura-medium';
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     color: #005f96;
     margin-right: 0.7rem;
 }
@@ -1582,6 +1584,14 @@ section:focus {
         line-height: 1.2;
     }
 
+    .email,
+    .tel {
+        font-family: 'futura-medium';
+        font-size: 3.4rem;
+        color: #005f96;
+        margin-right: 0.7rem;
+    }
+
     .checkbox-label-container .custom-checkbox::after {
         left: 5px;
         top: 0px;
@@ -1611,6 +1621,8 @@ section:focus {
         margin-top: 1rem;
         position: absolute;
         top: -3rem;
+        left: 5rem;
+        text-align: left;
     }
     .portal__points-item {
         display: flex;
@@ -1687,7 +1699,11 @@ section:focus {
 
     .info-name {
         font-size: 2.5rem;
-        padding-left: 10px;
+        padding-left: 0px;
+    }
+
+    #list-item-1 {
+        margin-top: 2rem;
     }
     .info-post {
         font-size: 2.5rem;
@@ -1821,8 +1837,8 @@ section:focus {
     }
 
     .header {
-        height: 80vh;
-        max-height: 80vh;
+        height: 82vh;
+        max-height: 82vh;
     }
     .form-group {
         flex-direction: column;
@@ -2464,7 +2480,7 @@ section:focus {
     }
     /* Do This */
     .header__hero-text {
-        height: 40%;
+        height: 42%;
     }
     /* Do this */
     .btn:link,
@@ -2506,8 +2522,8 @@ section:focus {
         padding: 4rem 0 5rem 0;
     }
     .brand__image {
-        width: 90px;
-        height: 60px;
+        width: 92px;
+        height: 76px;
     }
     .about__tiles {
         margin: 0;
