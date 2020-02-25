@@ -616,6 +616,9 @@ aboutSlide.addEventListener('touchend', (e) => {
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[3] + '<span class="big-text">' + big[3] + '</span>';
 
+                document.getElementById('abt-tile-1-sec').textContent = sub[2];
+                document.getElementById('abt-tile-2-sec').textContent = sub[3];
+
                 document.querySelector('.tile-1').style.backgroundColor = colrs[2];
                 document.querySelector('.tile-2').style.backgroundColor = colrs[0];
 
@@ -634,6 +637,8 @@ aboutSlide.addEventListener('touchend', (e) => {
                     primary[5] + '<span class="big-text">' + big[5] + '</span>';
                 document.querySelector('.tile-1').style.backgroundColor = colrs[1];
                 document.querySelector('.tile-2').style.backgroundColor = colrs[2];
+                document.getElementById('abt-tile-1-sec').textContent = sub[4];
+                document.getElementById('abt-tile-2-sec').textContent = sub[5];
 
                 document.getElementById('change-tile-1').style.color = '#fff';
                 document.getElementById('change-tile-2').style.color = '#fff';
@@ -653,6 +658,9 @@ aboutSlide.addEventListener('touchend', (e) => {
 
                 document.querySelector('.tile-1').style.backgroundColor = colrs[2];
                 document.querySelector('.tile-2').style.backgroundColor = colrs[1];
+
+                document.getElementById('abt-tile-1-sec').textContent = sub[0];
+                document.getElementById('abt-tile-2-sec').textContent = sub[1];
 
                 document.getElementById('change-tile-1').style.color = colrs[1];
                 document.getElementById('change-tile-2').style.color = '#fff';
@@ -679,6 +687,9 @@ aboutSlide.addEventListener('touchend', (e) => {
                 document.querySelector('.tile-1').style.backgroundColor = colrs[1];
                 document.querySelector('.tile-2').style.backgroundColor = colrs[2];
 
+                document.getElementById('abt-tile-1-sec').textContent = sub[4];
+                document.getElementById('abt-tile-2-sec').textContent = sub[5];
+
                 document.getElementById('change-tile-1').style.color = '#fff';
                 document.getElementById('change-tile-2').style.color = '#fff';
                 document.getElementById('abt-tile-1').style.borderBottom = ' 3px solid #fff';
@@ -694,6 +705,9 @@ aboutSlide.addEventListener('touchend', (e) => {
                     primary[2] + '<span class="big-text">' + big[2] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[3] + '<span class="big-text">' + big[3] + '</span>';
+
+                document.getElementById('abt-tile-1-sec').textContent = sub[2];
+                document.getElementById('abt-tile-2-sec').textContent = sub[3];
 
                 document.querySelector('.tile-1').style.backgroundColor = colrs[2];
                 document.querySelector('.tile-2').style.backgroundColor = colrs[0];
@@ -711,6 +725,9 @@ aboutSlide.addEventListener('touchend', (e) => {
                     primary[0] + '<span class="big-text">' + big[0] + '</span>';
                 document.getElementById('abt-tile-2').innerHTML =
                     primary[1] + '<span class="big-text">' + big[1] + '</span>';
+
+                document.getElementById('abt-tile-1-sec').textContent = sub[0];
+                document.getElementById('abt-tile-2-sec').textContent = sub[1];
 
                 document.querySelector('.tile-1').style.backgroundColor = colrs[2];
                 document.querySelector('.tile-2').style.backgroundColor = colrs[1];
