@@ -1320,12 +1320,6 @@ section:focus {
     z-index: 50;
 }
 
-.stefan-gutwirth .info {
-    margin-top: 1rem;
-    position: absolute;
-    top: -3rem;
-}
-
 .info-name {
     font-family: 'futura-medium';
     font-size: 1.8rem;
@@ -1611,6 +1605,12 @@ section:focus {
         height: 15rem;
         width: 15rem;
         z-index: 100;
+    }
+
+    .stefan-gutwirth .info {
+        margin-top: 1rem;
+        position: absolute;
+        top: -3rem;
     }
     .portal__points-item {
         display: flex;
