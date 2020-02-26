@@ -2629,6 +2629,14 @@ section:focus {
     }
 }
 
+@media (min-width: 768px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
+}
+
 @media only screen and (min-width: 1800px) {
     html {
         font-size: 75%;
@@ -2647,7 +2655,7 @@ section:focus {
     }
     #myCarousel {
         height: 35vh;
-        min-height: 35vh;
+        min-height: 3vh;
     }
     .about__tile-content--primary {
         line-height: 1.2;
@@ -2664,10 +2672,13 @@ section:focus {
     }
 }
 
-@media (min-width: 768px) {
-    .container,
-    .container-md,
-    .container-sm {
-        max-width: 100%;
+@media only screen and (min-width: 2200px) {
+    #myCarousel {
+        height: 30vh;
+        min-height: 30vh;
+    }
+
+    .about__tiles {
+        margin-left: 25rem;
     }
 }
