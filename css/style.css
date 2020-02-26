@@ -2633,6 +2633,35 @@ section:focus {
     html {
         font-size: 75%;
     }
+
+    .footer {
+        justify-content: space-between;
+    }
+
+    .footer__content {
+        margin: 0 4rem 0 0;
+    }
+    .footer__links {
+        margin: 0;
+        padding: 0 15rem 0 0;
+    }
+    #myCarousel {
+        height: 35vh;
+        min-height: 35vh;
+    }
+    .about__tile-content--primary {
+        line-height: 1.2;
+    }
+    .about__description-content {
+        width: 100%;
+    }
+    .about__description {
+        margin-right: 25rem;
+    }
+    .about__tiles {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-rows: repeat(3, minmax(200px, 1fr));
+    }
 }
 
 @media (min-width: 768px) {
