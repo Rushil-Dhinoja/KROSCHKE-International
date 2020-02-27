@@ -2125,6 +2125,7 @@ section:focus {
         padding-top: 2rem;
         margin: 0 auto;
         padding-bottom: 2rem;
+        padding-right: 0 !important;
     }
 
     .list__link-icon {
@@ -2673,6 +2674,41 @@ section:focus {
     }
 }
 
+@media only screen and (min-width: 800px) {
+    #myCarousel {
+        height: 39vh;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #myCarousel {
+        height: 25vh;
+    }
+
+    .carousel-indicators {
+        bottom: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #myCarousel {
+        height: 40vh;
+    }
+
+    .carousel-indicators {
+        bottom: 30px !important;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #myCarousel {
+        height: 40vh;
+    }
+    .carousel-indicators {
+        bottom: 40px !important;
+    }
+}
+
 @media only screen and (min-width: 1500px) {
     #myCarousel {
         height: 45vh;
@@ -2680,6 +2716,13 @@ section:focus {
     }
     .carousel-indicators {
         bottom: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #myCarousel {
+        height: 38vh;
+        min-height: 38vh;
     }
 }
 
