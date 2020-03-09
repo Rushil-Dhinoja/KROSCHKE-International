@@ -256,7 +256,7 @@ var colrs = ['#a5d2d2', '#005f96', '#37afb9'];
 
 var founderImg = [
     'assets/stefan-gutwirth-stockimage@3x.png',
-    'assets/grimminger-freigestellt-2@3x.png'
+    'assets/andreas-grimminger-final@3x.png'
 ];
 var founderName = ['Stefan Grutwirth', 'Andreas Grimminger'];
 var founderPost = ['Gebietsleiter Süd', 'Key Account Manger'];
