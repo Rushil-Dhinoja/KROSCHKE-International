@@ -68,6 +68,24 @@ body {
     width: 0;
 }
 
+#btn-form-1,
+#btn-form-2,
+#btn-form-3 {
+    background-color: #ed7102;
+    color: #fff;
+    font-family: 'gotham-medium';
+    font-size: 1.4rem;
+    padding: 1rem 2.8rem;
+    transition: all 0.2s;
+    border-radius: 0;
+}
+
+#btn-form-1:hover,
+#btn-form-2:hover,
+#btn-form-3:hover {
+    background-color: #c56b14;
+}
+
 .checkbox-label-container input:checked ~ .custom-checkbox {
     background-color: transparent;
 }
@@ -1356,12 +1374,12 @@ section:focus {
     display: inline-block;
     padding-top: 1rem;
     padding-left: 3rem;
-    width: 19rem;
+    /* width: 19rem; */
     height: 19rem;
 }
 
 .stefan-gutwirth img {
-    width: 19rem;
+    /* width: 19rem; */
     height: 19rem;
 }
 
@@ -2503,6 +2521,9 @@ section:focus {
 
     #portal-heading {
         padding: 0 0 0 0 !important;
+    }
+    .lower-case {
+        text-transform: lowercase;
     }
 
     .about__description {

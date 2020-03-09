@@ -243,13 +243,13 @@ var sub = [
     'Kennzeichen pro Jahr'
 ];
 
-var logoHeading = ['Schnell', 'Vernetzt', 'Entlastend', 'Zuverlässig'];
+var logoHeading = ['Schnell', 'In Ihrer Nähe', 'Entlastend', 'Zuverlässig'];
 
 var logoContent = [
-    'Lassen Sie Fahrzeuge regional noch am selben Tag, bundesweit innerhalb von 72 Stunden zu.',
-    'KfZ-Experten an über 500 Standorten bundesweit betreuen Ihre Zulassungen flächendeckend.',
+    'Lassen Sie Fahrzeuge regional innerhalb von 24 Stunden, bundesweit innerhalb von 72 Stunden zu.',
+    'Ob regional oder bundesweit: Durch unsere 500 Standorte machen wir Zulassungen in allen Kreisen möglich.',
     'Unser Service schont die Ressourcen Ihrer Mitarbeiter, um Ihre Produk-tivität im Tagesgeschäft zu steigern.',
-    'Professionelle Prozesse ermöglichen Fahrzeugzulassungen, auch wenn Ihre Mitarbeiter ausfallen.'
+    'Als Branchenexperte mit über 60 Jahren Automotive-Knowhow bietet Kroschke Ihnen professionelle Prozesse im Zulassungsdienst.'
 ];
 
 var colrs = ['#a5d2d2', '#005f96', '#37afb9'];
